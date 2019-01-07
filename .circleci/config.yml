@@ -16,4 +16,5 @@ jobs:
           name: Run tests
           command: |
             docker-compose up -d
+            docker network create kafka-network
             docker-compose -f docker-compose.kafka.yml up -d
